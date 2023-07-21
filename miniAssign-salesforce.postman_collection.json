@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "ddf29f07-a0cf-4f9b-b897-bad19ad16bc9",
+		"name": "miniAssign-salesforce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20941916"
+	},
+	"item": [
+		{
+			"name": "Create Records",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"employee_name__c\" : \"Savitha\",\r\n        \"age__c\" : \"23\",\r\n        \"branch__c\" : \"IE\",\r\n        \"phno__c\" : \"54676838765\",\r\n        \"city__c\" : \"Mangalore\",\r\n        \"email__c\": \"sghgh@email.com\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Records",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"employee_name__c\" : \"Savitha\",\r\n        \"age__c\" : \"23\",\r\n        \"branch__c\" : \"IE\",\r\n        \"phno__c\" : \"54676838765\",\r\n        \"city__c\" : \"Mangalore\",\r\n        \"email__c\": \"sghgh@email.com\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "331"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 Jul 2023 15:13:59 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": null,\n    \"items\": [\n        {\n            \"exception\": null,\n            \"message\": null,\n            \"payload\": {\n                \"success\": true,\n                \"id\": \"a005j00000MNp9DAAT\",\n                \"errors\": []\n            },\n            \"id\": \"a005j00000MNp9DAAT\",\n            \"statusCode\": null,\n            \"successful\": true\n        }\n    ],\n    \"successful\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Records",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\" : \"a005j00000MNnmmAAD\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Records",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id\" : \"a005j00000MNnmmAAD\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"delete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "331"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 Jul 2023 13:56:17 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": null,\n    \"items\": [\n        {\n            \"exception\": null,\n            \"message\": null,\n            \"payload\": {\n                \"success\": true,\n                \"id\": \"a005j00000MNnmmAAD\",\n                \"errors\": []\n            },\n            \"id\": \"a005j00000MNnmmAAD\",\n            \"statusCode\": null,\n            \"successful\": true\n        }\n    ],\n    \"successful\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Records",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"employee_name__c\" : \"Suresh\",\r\n        \"Id\": \"a005j00000MNnr9AAD\",\r\n        \"age__c\" : \"20\",\r\n        \"branch__c\" : \"Manager\",\r\n        \"phno__c\" : \"5472463763\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"update"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Records",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"employee_name__c\" : \"Suresh\",\r\n        \"Id\": \"a005j00000MNnr9AAD\",\r\n        \"age__c\" : \"20\",\r\n        \"branch__c\" : \"Manager\",\r\n        \"phno__c\" : \"5472463763\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "331"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 Jul 2023 14:56:01 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": null,\n    \"items\": [\n        {\n            \"exception\": null,\n            \"message\": null,\n            \"payload\": {\n                \"success\": true,\n                \"id\": \"a005j00000MNnr9AAD\",\n                \"errors\": []\n            },\n            \"id\": \"a005j00000MNnr9AAD\",\n            \"statusCode\": null,\n            \"successful\": true\n        }\n    ],\n    \"successful\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Records",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"106\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Records",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : \"106\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/get",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"get"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "202"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 Jul 2023 15:24:29 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"age__c\": \"22.0\",\n        \"employee_name__c\": \"Navitha\",\n        \"phno__c\": \"5467683876\",\n        \"Id\": \"a005j00000MNoaLAAT\",\n        \"type\": \"employee_data__c\",\n        \"branch__c\": \"IE\",\n        \"Name\": \"106\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
